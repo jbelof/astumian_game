@@ -32,9 +32,9 @@ gcc -O3 -DDEBUG *.o -o ag
 Run the binary without arguments to obtain the usage of command line input:
 
 $ ./ag  
-./ag: <game> <numsteps>   
-	<game> - integer game-type of 0,1, 2 (uniform) or 3 (correlated)  
-	<numsteps> - integer number of steps to perform  
+./ag: \<game\> \<numsteps\>   
+	\<game\> - integer game-type of 0,1, 2 (uniform) or 3 (correlated)  
+	\<numsteps\> - integer number of steps to perform  
 
 To run the (losing) Game 0:
 
