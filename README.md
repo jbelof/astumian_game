@@ -23,9 +23,7 @@ The code implements direct numerical simulation of a Markov Chain Monte Carlo fo
 Compilation is simple and relies on only standard libraries:
 
 $ make
-
 gcc -c -O3 -DDEBUG -I. astumian_game.c
-
 gcc -O3 -DDEBUG *.o -o ag
 
 
