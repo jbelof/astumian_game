@@ -22,46 +22,46 @@ The code implements direct numerical simulation of a Markov Chain Monte Carlo fo
 
 Compilation is simple and relies on only standard libraries:
 
-$ make
-gcc -c -O3 -DDEBUG -I. astumian_game.c
-gcc -O3 -DDEBUG *.o -o ag
+$ make  
+gcc -c -O3 -DDEBUG -I. astumian_game.c  
+gcc -O3 -DDEBUG *.o -o ag  
 
 
 ## Running the examples
 
 Run the binary without arguments to obtain the usage of command line input:
 
-$ ./ag
-./ag: <game> <numsteps> 
-	<game> - integer game-type of 0,1, 2 (uniform) or 3 (correlated)
-	<numsteps> - integer number of steps to perform
+$ ./ag  
+./ag: <game> <numsteps>   
+	<game> - integer game-type of 0,1, 2 (uniform) or 3 (correlated)  
+	<numsteps> - integer number of steps to perform  
 
 To run the (losing) Game 0:
 
-$ ./ag 0 1000000
-Running game-type 0
-Running 1000000 simulation steps
-losses / wins = 555560/444440 = 1.250023
-analytic: game0 = 1.250000, game1 = 1.250000, uniform = 0.810000
+$ ./ag 0 1000000  
+Running game-type 0  
+Running 1000000 simulation steps  
+losses / wins = 555560/444440 = 1.250023  
+analytic: game0 = 1.250000, game1 = 1.250000, uniform = 0.810000  
 
 where the MCMC results are shown in the penultimate line, compared with the clsed form analytic result obtain via product of state probabilities.
 
 Likewise for running Game 1:
 
-$ ./ag 1 1000000
-Running game-type 1
-Running 1000000 simulation steps
-losses / wins = 555588/444412 = 1.250164
+$ ./ag 1 1000000  
+Running game-type 1  
+Running 1000000 simulation steps  
+losses / wins = 555588/444412 = 1.250164  
 analytic: game0 = 1.250000, game1 = 1.250000, uniform = 0.810000
 
 with the explicit numerical calculation approaching the analytic result with more instantiations.
 
 With Game 2, we flip a coin and randomly select Game 1 or Game 2 Markov probabilities at each transition point; playing this hybride game leads to a reversal of the system!
 
-$ ./ag 2 1000000
-Running game-type 2
-Running 1000000 simulation steps
-losses / wins = 446432/553568 = 0.806463
+$ ./ag 2 1000000  
+Running game-type 2  
+Running 1000000 simulation steps  
+losses / wins = 446432/553568 = 0.806463  
 analytic: game0 = 1.250000, game1 = 1.250000, uniform = 0.810000
 
 (note that the analytic result to compare with is the 3rd one called "uniform").
