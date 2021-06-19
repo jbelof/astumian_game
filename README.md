@@ -73,7 +73,7 @@ analytic: game0 = 1.250000, game1 = 1.250000, uniform = 0.810000
 
 * **Jon Belof** [jbelof@github](https://github.com/jbelof)  
 
-[home page](http://people.llnl.gov/belof1)
+[home page](http://people.llnl.gov/belof1)  
 [google scholar](https://scholar.google.com/citations?user=gNrlNbwAAAAJ&hl=en)  
 [research gate](https://www.researchgate.net/profile/Jon_Belof)  
 [linkedin](http://www.linkedin.com/in/jbelof)  
