@@ -3,7 +3,7 @@
 This code implements the stochastic Markov model of Astumian [D.R. Astumian, Am. J. Phys. 2005, 73(2):178-183] and it's (seemingly) paradoxical behaviour.  Games labelled as 0 or 1 are both both probalistically losing, yet randomly switching between the two games (denoted Game 2) yields a winning outcome on average. The initial condition is the middle state, i=2 (phi=0.5) and transitions
 proceed until either losing (0/phi=0) or winning (4/phi=1) states are reached.
 
-![Diagrammatic representation of the Markov chains leading to losing games (top two chain) and winning game via stochastic alternation of game strategy (bottom, representing the mean winning outcome)](./surface_fig.png)
+![Diagrammatic representation of the Markov chains leading to losing games (top two chain) and winning game via stochastic alternation of game strategy (bottom, representing the mean winning outcome)](./surface_fig.png | width=250)
 
 An interesting addition to this story is that using a correlated/biased fluctuation spectrum (denoted Game 3) results in net losing in excess of simply playing a single game!
 
